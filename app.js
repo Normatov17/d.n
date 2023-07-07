@@ -70,3 +70,5 @@
 //   default:
 //     console.log("123");
 // }
+
+// Statements and Expressions  -- -  - -- -    Bayonotlar va ifodalar
