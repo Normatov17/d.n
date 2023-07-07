@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // let js = "JavaScript";
 
@@ -80,6 +80,27 @@
 // console.log(drink);
 
 // CHALLENGE #4: Video Solution
-const bill = 275;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`${bill} Hello ${tip}`);
+// const bill = 275;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// console.log(`${bill} Hello ${tip}`);
+
+// 30 - dars tugadi
+
+// Functions
+function helle() {
+  console.log("Hello Function");
+}
+helle();
+
+for (let i = 0; i < 100; i++) {
+  helle();
+}
+
+function fruik(apple, banana) {
+  console.log(apple, banana);
+  const juice = `Aplple ${apple} and Banana ${banana}`;
+  return juice;
+}
+
+const resoult = fruik(1, 3);
+console.log(resoult);
