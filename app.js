@@ -72,3 +72,14 @@
 // }
 
 // Statements and Expressions  -- -  - -- -    Bayonotlar va ifodalar
+
+// The Conditional (Ternary) Operato  ----  Shartli (uchlik) operator
+// const age = 12;
+// const drink = 18 >= age ? "wine" : "cole";
+
+// console.log(drink);
+
+// CHALLENGE #4: Video Solution
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`${bill} Hello ${tip}`);
