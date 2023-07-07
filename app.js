@@ -56,3 +56,17 @@
 // if (ism === "Davlatbek") {
 //   alert("Qalesiz endi");
 // }
+
+// . The switch Statemen
+
+// const day = "manday";
+
+// switch (day) {
+//   case "manday":
+//     console.log("monday");
+//     break;
+//   case "thuday":
+//     console.log("1");
+//   default:
+//     console.log("123");
+// }
