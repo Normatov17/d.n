@@ -87,20 +87,61 @@
 // 30 - dars tugadi
 
 // Functions
-function helle() {
-  console.log("Hello Function");
-}
-helle();
+// function helle() {
+//   console.log("Hello Function");
+// }
+// helle();
 
-for (let i = 0; i < 100; i++) {
-  helle();
-}
+// for (let i = 0; i < 100; i++) {
+//   helle();
+// }
 
-function fruik(apple, banana) {
-  console.log(apple, banana);
-  const juice = `Aplple ${apple} and Banana ${banana}`;
-  return juice;
-}
+// function fruik(apple, banana) {
+//   console.log(apple, banana);
+//   const juice = `Aplple ${apple} and Banana ${banana}`;
+//   return juice;
+// }
 
-const resoult = fruik(1, 3);
-console.log(resoult);
+// const resoult = fruik(1, 3);
+// console.log(resoult);
+
+// Function Declarations vs. Expressions and Arrow Function
+
+// function decloretion
+// function expretion
+// arrow function
+
+// function salom(name, kun = "tun") {
+//   const des = `Salom ${name} xayrli ${kun}`;
+//   return des;
+// }
+
+// const aww = salom();
+
+// const as = function (aww) {
+//   const asd = `${aww}`;
+// };
+
+// const alsi = as();
+// console.log(alsi);
+
+// function turlari
+// function decloretion
+//  function expretion
+// arror function
+
+// const calcArea = function (radius) {
+//   const area = 1 * radius ** 2;
+//   return area;
+// };
+
+// const a = calcArea(10);
+// console.log(a);
+
+// const calcVal = function (qiymat) {
+//   const qiymat1 = 1 * qiymat ** a;
+//   return qiymat1;
+// };
+
+// const calcValResoult = calcVal(11);
+// console.log(calcValResoult);
