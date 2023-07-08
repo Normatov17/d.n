@@ -145,3 +145,16 @@
 
 // const calcValResoult = calcVal(11);
 // console.log(calcValResoult);
+
+// arrow function
+
+const bill = (product, tax) => {
+  let total = 0;
+  for (let i = 0; i < product.length; i++) {
+    total += product[i] + product[i] * tax;
+  }
+  return total;
+};
+
+const resoult = bill([10, 23, 323, 12], 0.2);
+console.log(resoult);
