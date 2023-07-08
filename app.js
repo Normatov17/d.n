@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // let js = "JavaScript";
 
@@ -56,3 +56,51 @@
 // if (ism === "Davlatbek") {
 //   alert("Qalesiz endi");
 // }
+
+// . The switch Statemen
+
+// const day = "manday";
+
+// switch (day) {
+//   case "manday":
+//     console.log("monday");
+//     break;
+//   case "thuday":
+//     console.log("1");
+//   default:
+//     console.log("123");
+// }
+
+// Statements and Expressions  -- -  - -- -    Bayonotlar va ifodalar
+
+// The Conditional (Ternary) Operato  ----  Shartli (uchlik) operator
+// const age = 12;
+// const drink = 18 >= age ? "wine" : "cole";
+
+// console.log(drink);
+
+// CHALLENGE #4: Video Solution
+// const bill = 275;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// console.log(`${bill} Hello ${tip}`);
+
+// 30 - dars tugadi
+
+// Functions
+function helle() {
+  console.log("Hello Function");
+}
+helle();
+
+for (let i = 0; i < 100; i++) {
+  helle();
+}
+
+function fruik(apple, banana) {
+  console.log(apple, banana);
+  const juice = `Aplple ${apple} and Banana ${banana}`;
+  return juice;
+}
+
+const resoult = fruik(1, 3);
+console.log(resoult);
