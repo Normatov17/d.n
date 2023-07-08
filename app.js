@@ -171,9 +171,20 @@
 // const resoult = ismFunction(ism, yosh);
 // alert(resoult);
 
-function calcAge(brithYaer, fristName) {
-  const age = 2023 - brithYaer;
-  console.log(`Siz ${age} yoshga kirdingiz ${fristName}`);
-}
+// function calcAge(brithYaer, fristName) {
+//   const age = 2023 - brithYaer;
+//   console.log(`Siz ${age} yoshga kirdingiz ${fristName}`);
+// }
 
-calcAge(2004, "Akbarjon");
+// calcAge(2004, "Akbarjon");
+
+const fruit = function (Aplple, banana) {
+  const juice = `Apple ${Aplple} and with Banana ${banana}`;
+  return juice;
+};
+
+const resoult = fruit(12, 34);
+console.log(resoult);
+
+const resoult2 = fruit(12, 34);
+console.log(resoult2);
