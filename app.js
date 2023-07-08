@@ -148,13 +148,32 @@
 
 // arrow function
 
-const bill = (product, tax) => {
-  let total = 0;
-  for (let i = 0; i < product.length; i++) {
-    total += product[i] + product[i] * tax;
-  }
-  return total;
-};
+// const bill = (product, tax) => {
+//   let total = 0;
+//   for (let i = 0; i < product.length; i++) {
+//     total += product[i] + product[i] * tax;
+//   }
+//   return total;
+// };
 
-const resoult = bill([10, 23, 323, 12], 0.2);
-console.log(resoult);
+// const resoult = bill([10, 23, 323, 12], 0.2);
+// console.log(resoult);
+
+// const ism = prompt("Ismizngni kiriting");
+// const yosh = prompt("Tug'ilgan yilingizni kiriting");
+
+// const ismFunction = function (ism, yosh) {
+//   const ageVal = 2023 - yosh;
+//   const ageName = `Salom "${ism.toUpperCase()}" siz ${ageVal} kiribsiz tabriklayman`;
+//   return ageName;
+// };
+
+// const resoult = ismFunction(ism, yosh);
+// alert(resoult);
+
+function calcAge(brithYaer, fristName) {
+  const age = 2023 - brithYaer;
+  console.log(`Siz ${age} yoshga kirdingiz ${fristName}`);
+}
+
+calcAge(2004, "Akbarjon");
