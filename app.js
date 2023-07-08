@@ -1,5 +1,7 @@
 // "use strict";
 
+// const { func } = require("prop-types");
+
 // let js = "JavaScript";
 
 // if (js === "JavaScript") {
@@ -105,86 +107,53 @@
 // const resoult = fruik(1, 3);
 // console.log(resoult);
 
-// Function Declarations vs. Expressions and Arrow Function
-
-// function decloretion
-// function expretion
-// arrow function
-
-// function salom(name, kun = "tun") {
-//   const des = `Salom ${name} xayrli ${kun}`;
-//   return des;
+// function cutFruitPreis(fruit) {
+//   const meva = fruit * 4;
+//   return meva;
 // }
 
-// const aww = salom();
+// function fruitProsser(apple, banana, kivi) {
+//   const aplleProsser = cutFruitPreis(apple);
+//   const bananaProsser = cutFruitPreis(banana);
+//   const kiveProsser = cutFruitPreis(kivi);
 
-// const as = function (aww) {
-//   const asd = `${aww}`;
-// };
+//   const juice = `Juice with ${aplleProsser} apple and ${bananaProsser} banana and ${kiveProsser} Kive.`;
+//   return juice;
+// }
 
-// const alsi = as();
-// console.log(alsi);
-
-// function turlari
-// function decloretion
-//  function expretion
-// arror function
-
-// const calcArea = function (radius) {
-//   const area = 1 * radius ** 2;
-//   return area;
-// };
-
-// const a = calcArea(10);
-// console.log(a);
-
-// const calcVal = function (qiymat) {
-//   const qiymat1 = 1 * qiymat ** a;
-//   return qiymat1;
-// };
-
-// const calcValResoult = calcVal(11);
-// console.log(calcValResoult);
-
-// arrow function
-
-// const bill = (product, tax) => {
-//   let total = 0;
-//   for (let i = 0; i < product.length; i++) {
-//     total += product[i] + product[i] * tax;
-//   }
-//   return total;
-// };
-
-// const resoult = bill([10, 23, 323, 12], 0.2);
-// console.log(resoult);
-
-// const ism = prompt("Ismizngni kiriting");
-// const yosh = prompt("Tug'ilgan yilingizni kiriting");
-
-// const ismFunction = function (ism, yosh) {
-//   const ageVal = 2023 - yosh;
-//   const ageName = `Salom "${ism.toUpperCase()}" siz ${ageVal} kiribsiz tabriklayman`;
-//   return ageName;
-// };
-
-// const resoult = ismFunction(ism, yosh);
+// const resoult = fruitProsser(12, 34, 11);
 // alert(resoult);
 
-// function calcAge(brithYaer, fristName) {
-//   const age = 2023 - brithYaer;
-//   console.log(`Siz ${age} yoshga kirdingiz ${fristName}`);
+// function hela(non, yog, sut) {
+//   const sutT = cutFruitPreis(sut);
+//   const yoyG = cutFruitPreis(yog);
+//   const nonN = cutFruitPreis(non);
+
+//   const juice = `Juice with ${non} NON and ${yog} YOG' and ${sut} SUT.`;
+//   return juice;
 // }
 
-// calcAge(2004, "Akbarjon");
+// const resoult2 = hela(2, 4, 12);
+// console.log(resoult2);
 
-const fruit = function (Aplple, banana) {
-  const juice = `Apple ${Aplple} and with Banana ${banana}`;
-  return juice;
+// Coding challange
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(3, 4, 5));
+
+// TEst 1
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphis, avgKoalas) {
+  if (avgDolphis >= 2 * avgKoalas) {
+    console.log(`Dolphis win 🏆 (${avgDolphis} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphis) {
+    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphis})`);
+  } else {
+    console.log("No Team wins...");
+  }
 };
 
-const resoult = fruit(12, 34);
-console.log(resoult);
-
-const resoult2 = fruit(12, 34);
-console.log(resoult2);
+checkWinner(scoreDolphins, scoreKoalas);
