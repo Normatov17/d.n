@@ -137,23 +137,49 @@
 // console.log(resoult2);
 
 // Coding challange
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(3, 4, 5));
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage(3, 4, 5));
 
-// TEst 1
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
+// // TEst 1
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
 
-console.log(scoreDolphins, scoreKoalas);
+// console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = function (avgDolphis, avgKoalas) {
-  if (avgDolphis >= 2 * avgKoalas) {
-    console.log(`Dolphis win 🏆 (${avgDolphis} vs. ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolphis) {
-    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphis})`);
-  } else {
-    console.log("No Team wins...");
-  }
-};
+// const checkWinner = function (avgDolphis, avgKoalas) {
+//   if (avgDolphis >= 2 * avgKoalas) {
+//     console.log(`Dolphis win 🏆 (${avgDolphis} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolphis) {
+//     console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphis})`);
+//   } else {
+//     console.log("No Team wins...");
+//   }
+// };
 
-checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
+
+// // Array ---------------------------------------------
+// const hello = ["Salom", "Hello", "Privet"];
+// console.log(hello);
+// hello.push("salom");
+// console.log(hello);
+// hello.pop("Privet");
+
+// console.log(hello);
+
+// // Array methods
+
+// // concat()
+// const hello2 = ["olma", "gilos", "behi"];
+// const resoult = hello.concat(hello2);
+// console.log(resoult);
+
+// const mapValues = (number) => "Son :" + number;
+// const mappedValus = resoult.map(mapValues);
+// mappedValus.sort();
+// console.log(mappedValus);
+
+// hello.sort();
+// console.log(hello);
+
+// const friends = ["Steven", "Jonas", "Micheil"];
