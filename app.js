@@ -183,3 +183,49 @@
 // console.log(hello);
 
 // const friends = ["Steven", "Jonas", "Micheil"];
+
+// Coding challange #
+
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// const totals = bills + tips;
+// console.log(bills, tips, totals);
+
+// Object  ---------------------------------------------------------------------------------------------------
+// const dasturchi = {
+//   familya: "Normatov",
+//   ism: "Davlatbek",
+//   age: 19,
+//   location: "Russia",
+//   language: ["uzbek", "kirgiz", "rus"],
+//   speek() {
+//     setTimeout(function () {
+//       alert(dasturchi.location);
+//     }, 3000);
+//   },
+//   family: {
+//     Father: "Dilshodbek",
+//     Mather: "Nigora",
+//     Brather: "Do'stmuhammad",
+//     greet() {
+//       console.log("My family");
+//     },
+//   },
+// };
+
+// console.log(dasturchi);
+
+// const user = {
+//   age: 19,
+//   name: "Ali",
+//   salomlash: function () {
+//     alert("Hello World");
+//   },
+// };
+
+// user.salomlash();
