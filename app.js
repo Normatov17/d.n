@@ -231,28 +231,101 @@
 // user.salomlash();
 // console.log(Object.keys(dasturchi));
 
+// const user = {
+//   name: "Davlatbek",
+//   lastName: "Normatov",
+//   age: 19,
+//   job: "Web Devoloper",
+//   login: function () {
+//     console.log(
+//       `Salom mening ismin ${this.name} familyam ${this.lastName}, men ${this.age} yoshdaman, men ${this.job}`
+//     );
+//   },
+
+//   lang: ["uzbek", "russia", "english"],
+//   speek: function () {
+//     console.log("I can speek");
+//     this.lang.forEach((lan) => {
+//       //   console.log(`Men ${lan} tilini bilaman`);
+//       console.log(lan);
+//     });
+//   },
+// };
+
+// setTimeout(() => {
+//   user.login();
+// }, 3000);
+// user.speek();
+
+// const user = {
+//   fristName: "Davlatbek",
+//   lastName: "Normatov",
+//   age: 19,
+//   job: "Programmer",
+//   location: "Uzbekistan",
+//   langs: ["uzbek", "kirgiz", "russian", "english"],
+//   myHobby: ["Footboll", "Code", "Reading"],
+//   speek: function () {
+//     console.log("I can Speeking");
+//     this.langs.forEach((lang) => {
+//       lang;
+//     });
+//   },
+//   friends: ["Akbarjon", "Salimboy", "Akbarshox", "Asadbek", "Shoxjahon"],
+// };
+
+// user.instagram = "https://instagram.com";
+// user.twitter = "https://twitter.com";
+// console.log(user);
+// const interest = prompt(
+//   "What do you want to know about Davlatbek ? Choose between fristName, LastName, age, job, and friends"
+// );
+
+// // console.log(user);
+
+// if (user[interest]) {
+//   alert(user[interest]);
+// } else {
+//   alert("The requested information is incorrect");
+// }
+
+// console.log(
+//   `Salom men do'stlarim ${user.friends.length} hozir ${user.friends[0]}`
+// );
+
+// Object methods
 const user = {
-  name: "Davlatbek",
+  fristName: "Davlatbek",
   lastName: "Normatov",
   age: 19,
-  job: "Web Devoloper",
-  login: function () {
-    console.log(
-      `Salom mening ismin ${this.name} familyam ${this.lastName}, men ${this.age} yoshdaman, men ${this.job}`
-    );
-  },
-
-  lang: ["uzbek", "russia", "english"],
+  job: "Programmer",
+  brithYear: 2004,
+  location: "Uzbekistan",
+  langs: ["uzbek", "kirgiz", "russian", "english"],
+  myHobby: ["Footboll", "Code", "Reading"],
+  hasDrive: false,
   speek: function () {
-    console.log("I can speek");
-    this.lang.forEach((lan) => {
-      //   console.log(`Men ${lan} tilini bilaman`);
-      console.log(lan);
+    console.log("I can Speeking");
+    this.langs.forEach((lang) => {
+      lang;
     });
+  },
+  calcAge: function () {
+    console.log(this);
+    this.age = 2023 - this.brithYear;
+    return this.age;
+  },
+  friends: ["Akbarjon", "Salimboy", "Akbarshox", "Asadbek", "Shoxjahon"],
+
+  getSummary: function () {
+    return `${user.fristName} is a ${user.calcAge()} old ${
+      user.job
+    } and he has ${this.hasDrive ? "a" : "no"}  driver's license`;
   },
 };
 
-setTimeout(() => {
-  user.login();
-}, 3000);
-user.speek();
+console.log(user.age);
+console.log(user.age);
+console.log(user.age);
+
+console.log(user.getSummary());
