@@ -379,3 +379,23 @@
 //   }
 //   console.log(i);
 // }
+
+// while   do while
+// let sum = 0;
+// // let i = 0;
+// while (i < 10) {
+//   console.log("Salom dunyo");
+//   i++;
+//   if (i === 3) {
+//     break;
+//   }
+// }
+
+// console.log(sum);
+
+// do/while
+// let i = 0;
+// do {
+//   console.log("Hello World!");
+//   i++;
+// } while (false);
