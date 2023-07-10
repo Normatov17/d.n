@@ -364,3 +364,18 @@
 //     `${John.fullName}'s BMI (${John.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
 //   );
 // }
+
+// For Loop
+// let sec = 0;
+// for (let i = 0; i < 5; i++) {
+//   sec += i;
+// }
+
+// console.log(sec);
+
+// for (let i = 0; i <= 7; i++) {
+//   if (i === 3) {
+//     continue;
+//   }
+//   console.log(i);
+// }
