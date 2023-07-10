@@ -294,38 +294,73 @@
 // );
 
 // Object methods
-const user = {
-  fristName: "Davlatbek",
-  lastName: "Normatov",
-  age: 19,
-  job: "Programmer",
-  brithYear: 2004,
-  location: "Uzbekistan",
-  langs: ["uzbek", "kirgiz", "russian", "english"],
-  myHobby: ["Footboll", "Code", "Reading"],
-  hasDrive: false,
-  speek: function () {
-    console.log("I can Speeking");
-    this.langs.forEach((lang) => {
-      lang;
-    });
-  },
-  calcAge: function () {
-    console.log(this);
-    this.age = 2023 - this.brithYear;
-    return this.age;
-  },
-  friends: ["Akbarjon", "Salimboy", "Akbarshox", "Asadbek", "Shoxjahon"],
+// const user = {
+//   fristName: "Davlatbek",
+//   lastName: "Normatov",
+//   age: 19,
+//   job: "Programmer",
+//   brithYear: 2004,
+//   location: "Uzbekistan",
+//   langs: ["uzbek", "kirgiz", "russian", "english"],
+//   myHobby: ["Footboll", "Code", "Reading"],
+//   hasDrive: false,
+//   speek: function () {
+//     console.log("I can Speeking");
+//     this.langs.forEach((lang) => {
+//       lang;
+//     });
+//   },
+//   calcAge: function () {
+//     console.log(this);
+//     this.age = 2023 - this.brithYear;
+//     return this.age;
+//   },
+//   friends: ["Akbarjon", "Salimboy", "Akbarshox", "Asadbek", "Shoxjahon"],
 
-  getSummary: function () {
-    return `${user.fristName} is a ${user.calcAge()} old ${
-      user.job
-    } and he has ${this.hasDrive ? "a" : "no"}  driver's license`;
-  },
-};
+//   getSummary: function () {
+//     return `${user.fristName} is a ${user.calcAge()} old ${
+//       user.job
+//     } and he has ${this.hasDrive ? "a" : "no"}  driver's license`;
+//   },
+// };
 
-console.log(user.age);
-console.log(user.age);
-console.log(user.age);
+// console.log(user.age);
+// console.log(user.age);
+// console.log(user.age);
 
-console.log(user.getSummary());
+// console.log(user.getSummary());
+
+// Object Coding channalge
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 92,
+//   heigth: 1.98,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.heigth ** 2;
+//     return this.bmi;
+//   },
+// };
+
+// const John = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   heigth: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.heigth ** 2;
+//     return this.bmi;
+//   },
+// };
+// mark.calcBMI();
+// console.log(mark.bmi);
+// John.calcBMI();
+// console.log(John.bmi);
+
+// if (mark.bmi > John.bmi) {
+//   console.log(
+//     `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${John.fullName}'s BMI (${John.bmi})`
+//   );
+// } else {
+//   console.log(
+//     `${John.fullName}'s BMI (${John.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
+//   );
+// }
