@@ -399,3 +399,88 @@
 //   console.log("Hello World!");
 //   i++;
 // } while (false);
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`Hello ${i}`);
+// }
+
+// const jonas = [
+//   "Jonas",
+//   "Schedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Micheal", "Peter", "Steven"],
+//   true,
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < jonas.length; i++) {
+//   console.log(jonas[i], typeof jonas[i]);
+
+//   // types[i] = typeof jonas[i];
+//   types.push(typeof jonas[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2001, 1992, 1980, 2020];
+// const age = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   console.log(years[i]);
+
+//   age.push(2023 - years[i]);
+// }
+
+// console.log(age);
+
+// const jonas = [
+//   "Jonas",
+//   "Schedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Micheal", "Peter", "Steven"],
+//   true,
+// ];
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(i, jonas[i]);
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log("Loop is about to end.....");
+// }
+
+// Coding challenge
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+// const tips = [];
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calcTip(bills[i]);
+//   tips.push(tip);
+//   totals.push(tip + bills[i]);
+// }
+
+// console.log(bills, tips, totals);
+
+// const calcAverage = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   // console.log(sum);
+//   return sum / arr.length;
+// };
+
+// const resoult = calcAverage([2, 3, 4, 5, 6, 7]);
+// console.log(resoult);
