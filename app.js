@@ -229,3 +229,30 @@
 // };
 
 // user.salomlash();
+// console.log(Object.keys(dasturchi));
+
+const user = {
+  name: "Davlatbek",
+  lastName: "Normatov",
+  age: 19,
+  job: "Web Devoloper",
+  login: function () {
+    console.log(
+      `Salom mening ismin ${this.name} familyam ${this.lastName}, men ${this.age} yoshdaman, men ${this.job}`
+    );
+  },
+
+  lang: ["uzbek", "russia", "english"],
+  speek: function () {
+    console.log("I can speek");
+    this.lang.forEach((lan) => {
+      //   console.log(`Men ${lan} tilini bilaman`);
+      console.log(lan);
+    });
+  },
+};
+
+setTimeout(() => {
+  user.login();
+}, 3000);
+user.speek();
