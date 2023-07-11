@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // const { func } = require("prop-types");
 
@@ -484,3 +484,22 @@
 
 // const resoult = calcAverage([2, 3, 4, 5, 6, 7]);
 // console.log(resoult);
+// const ae = 12;
+// console.log("jsk");
+// console.log();
+// console.log();
+
+// const arrow = x => {
+//   console.log(x);
+// };
+
+// arrow("salom");
+
+// TODO  Using Google, StackOverflow and MDN
+
+// Debugging (Fixing Errors
+
+console.log(console);
+
+console.log("ehllo ");
+//
