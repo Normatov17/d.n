@@ -499,7 +499,43 @@
 
 // Debugging (Fixing Errors
 
-console.log(console);
+// console.log(console);
 
-console.log("ehllo ");
-//
+// console.log("ehllo ");
+// // //
+
+// const measurKelin = function () {
+//   const measurement = {
+//     type: "temp",
+//     unit: "celsius",
+//     value: prompt("Degrees celcise:)"),
+//   };
+//   console.table(measurement);
+
+//   // console.log(measurKelin.value);
+//   // console.warn(measurKelin.value);
+//   // console.error(measurKelin.value);
+//   const kelvin = measurement.value + 273;
+//   return kelvin;
+// };
+
+// console.log(measurKelin());
+
+// coding
+
+// const data1 = [17, 21, 23];
+// const data2 = [12, 5, -5, 0, 4];
+
+// // console.log(`... ${data1[0]} ...${data1[1]} ...${data1[2]}`);
+
+// const print = function (arr) {
+//   let str = "";
+
+//   for (let i = 0; i < arr.length; i++) {
+//     str = str + `${arr[i]} in days ${i + 1}`;
+//   }
+
+//   console.log(str);
+// };
+
+// print(data1);
