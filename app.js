@@ -542,12 +542,12 @@
 
 // print(data1);
 
-const heading = document.querySelector("h1");
-console.log(heading);
+// const heading = document.querySelector("h1");
+// console.log(heading);
 
-//
+// //
 
-// heading.textContent = "From Zero to Export!";
-heading.innerHTML = `
-  <h3>From Zero to Export <span class='color:red'>!</span></h3>
-`;
+// // heading.textContent = "From Zero to Export!";
+// heading.innerHTML = `
+//   <h3>From Zero to Export <span class='color:red'>!</span></h3>
+// `;
