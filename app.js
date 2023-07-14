@@ -551,3 +551,5 @@
 // heading.innerHTML = `
 //   <h3>From Zero to Export <span class='color:red'>!</span></h3>
 // `;
+
+// Dice Game
