@@ -555,105 +555,164 @@
 // `;
 
 // Dice Game
-"use strict";
+("use strict");
 
-// Selecting elements
-const player0El = document.querySelector(".player--0");
-const player1El = document.querySelector(".player--1");
-const score0El = document.querySelector("#score--0");
-const score1El = document.getElementById("score--1");
-const current0El = document.getElementById("current--0");
-const current1El = document.getElementById("current--1");
+import { arr, x } from "./about";
 
-const diceEl = document.querySelector(".dice");
-const btnNew = document.querySelector(".btn--new");
-const btnRoll = document.querySelector(".btn--roll");
-const btnHold = document.querySelector(".btn--hold");
+// /// Selecting elements
+// const player0El = document.querySelector(".player--0");
+// const player1El = document.querySelector(".player--1");
+// const score0El = document.querySelector("#score--0");
+// const score1El = document.getElementById("score--1");
+// const current0El = document.getElementById("current--0");
+// const current1El = document.getElementById("current--1");
 
-let scores, currentScore, activePlayer, playing;
+// const diceEl = document.querySelector(".dice");
+// const btnNew = document.querySelector(".btn--new");
+// const btnRoll = document.querySelector(".btn--roll");
+// const btnHold = document.querySelector(".btn--hold");
 
-// Starting conditions
-const init = function () {
-  scores = [0, 0];
-  currentScore = 0;
-  activePlayer = 0;
-  playing = true;
+// let scores, currentScore, activePlayer, playing;
 
-  score0El.textContent = 0;
-  score1El.textContent = 0;
-  current0El.textContent = 0;
-  current1El.textContent = 0;
+// // Starting conditions
+// const init = function () {
+//   scores = [0, 0];
+//   currentScore = 0;
+//   activePlayer = 0;
+//   playing = true;
 
-  diceEl.classList.add("hidden");
-  player0El.classList.remove("player--winner");
-  player1El.classList.remove("player--winner");
-  player0El.classList.add("player--active");
-  player1El.classList.remove("player--active");
-};
-init();
+//   score0El.textContent = 0;
+//   score1El.textContent = 0;
+//   current0El.textContent = 0;
+//   current1El.textContent = 0;
 
-const switchPlayer = function () {
-  document.getElementById(`current--${activePlayer}`).textContent = 0;
-  currentScore = 0;
-  activePlayer = activePlayer === 0 ? 1 : 0;
-  player0El.classList.toggle("player--active");
-  player1El.classList.toggle("player--active");
-};
+//   diceEl.classList.add("hidden");
+//   player0El.classList.remove("player--winner");
+//   player1El.classList.remove("player--winner");
+//   player0El.classList.add("player--active");
+//   player1El.classList.remove("player--active");
+// };
+// init();
 
-// Rolling dice functionality
-btnRoll.addEventListener("click", function () {
-  if (playing) {
-    // 1. Generating a random dice roll
-    const dice = Math.trunc(Math.random() * 6) + 1;
+// const switchPlayer = function () {
+//   document.getElementById(`current--${activePlayer}`).textContent = 0;
+//   currentScore = 0;
+//   activePlayer = activePlayer === 0 ? 1 : 0;
+//   player0El.classList.toggle("player--active");
+//   player1El.classList.toggle("player--active");
+// };
 
-    // 2. Display dice
-    diceEl.classList.remove("hidden");
-    diceEl.src = `dice-${dice}.png`;
+// // Rolling dice functionality
+// btnRoll.addEventListener("click", function () {
+//   if (playing) {
+//     // 1. Generating a random dice roll
+//     const dice = Math.trunc(Math.random() * 6) + 1;
 
-    // 3. Check for rolled 1
-    if (dice !== 1) {
-      // Add dice to current score
-      currentScore += dice;
-      document.getElementById(`current--${activePlayer}`).textContent =
-        currentScore;
-    } else {
-      // Switch to next player
-      switchPlayer();
-    }
-  }
-});
+//     // 2. Display dice
+//     diceEl.classList.remove("hidden");
+//     diceEl.src = `dice-${dice}.png`;
 
-btnHold.addEventListener("click", function () {
-  if (playing) {
-    // 1. Add current score to active player's score
-    scores[activePlayer] += currentScore;
-    // scores[1] = scores[1] + currentScore
+//     // 3. Check for rolled 1
+//     if (dice !== 1) {
+//       // Add dice to current score
+//       currentScore += dice;
+//       document.getElementById(`current--${activePlayer}`).textContent =
+//         currentScore;
+//     } else {
+//       // Switch to next player
+//       switchPlayer();
+//     }
+//   }
+// });
 
-    document.getElementById(`score--${activePlayer}`).textContent =
-      scores[activePlayer];
+// btnHold.addEventListener("click", function () {
+//   if (playing) {
+//     // 1. Add current score to active player's score
+//     scores[activePlayer] += currentScore;
+//     // scores[1] = scores[1] + currentScore
 
-    // 2. Check if player's score is >= 100
-    if (scores[activePlayer] >= 100) {
-      // Finish the game
-      playing = false;
-      diceEl.classList.add("hidden");
+//     document.getElementById(`score--${activePlayer}`).textContent =
+//       scores[activePlayer];
 
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.add("player--winner");
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.remove("player--active");
-    } else {
-      // Switch to the next player
-      switchPlayer();
-    }
-  }
-});
-// FRAME
+//     // 2. Check if player's score is >= 100
+//     if (scores[activePlayer] >= 100) {
+//       // Finish the game
+//       playing = false;
+//       diceEl.classList.add("hidden");
 
-btnNew.addEventListener("click", init);
+//       document
+//         .querySelector(`.player--${activePlayer}`)
+//         .classList.add("player--winner");
+//       document
+//         .querySelector(`.player--${activePlayer}`)
+//         .classList.remove("player--active");
+//     } else {
+//       // Switch to the next player
+//       switchPlayer();
+//     }
+//   }
+// });
+// // FRAME
 
-// Switching the Active Player
+// btnNew.addEventListener("click", init);
+
+// // Switching the Active Player
 
 // TODO
+//Scope
+// function calcAge(brithyaer) {
+//   const age = 2037 - brithyaer;
+//   console.log(fristName);
+
+//   function printAge() {
+//     const output = `${fristName}, you are ${age} bron in ${brithyaer}`;
+//     console.log(output);
+//   }
+
+//   printAge();
+
+//   return age;
+// }
+
+// const fristName = "Ali";
+// calcAge(1991);
+
+// if (!num) salomlash();
+// var num = 10;
+
+// function salomlash() {
+//   console.log("Hello Hammaga");
+// }
+
+//  // The this Keyword in Practice
+// var fristName = "Matilda";
+// const jonas = {
+//   fristName: "Jonas",
+//   year: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+
+//   greet: () => console.log(`Hey ${this.fristName}`),
+// };
+
+// jonas.calcAge();
+// jonas.greet();
+
+// let age = 30;
+// console.log(age);
+// age = 40;
+// console.log(age);
+
+// const jonas = {
+//   nmae: "adad",
+//   age: 27,
+// };
+// console.log(jonas);
+
+// const dssd = { ...jonas };
+// dssd.age = 90;
+// console.log(dssd);im
+
+console.log(arr);
