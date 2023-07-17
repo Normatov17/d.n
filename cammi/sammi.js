@@ -343,3 +343,88 @@
 // }
 
 // logger(...calc);
+
+// TODO OPP nima va ish qiladi
+// const name = "Samar";
+// const str = new String(name);
+// console.log(name);
+// console.log(str);
+// console.dir(1, 2, 3);
+// console.dir([1, 2, 3, 4, 56, 6]);
+
+// const car = {
+//   mator: "x",
+//   color: "black",
+// };
+
+// const bwm = {
+//   spped: 280,
+// };
+// const bmw = Object.create(car);
+
+// // Object.setPrototypeOf(bmw, car);
+
+// console.log(bmw);
+
+// Amaliyot
+
+function startApp() {
+  numberOfSeries = +prompt("Nechta Serial Ko'rdingiz", "");
+
+  while (
+    numberOfSeries == "" ||
+    numberOfSeries == null ||
+    isNaN(numberOfSeries)
+  ) {
+    numberOfSeries = +prompt("Nechta Serial Ko'rdingiz", "");
+  }
+}
+
+startApp();
+const seriesDB = {
+  count: numberOfSeries,
+  series: {},
+  actors: [],
+  genres: [],
+  privat: false,
+};
+
+for (let i = 0; i < 2; i++) {
+  const a = prompt("Oxirgi ko'rgan serialingiz?");
+  const b = prompt("Necha baxo berasiz?");
+  if (a != null && b != null && a != "" && b != "") {
+    seriesDB.series[a] = b;
+    console.log("done");
+  } else {
+    console.log("error");
+    i--;
+  }
+}
+
+if (seriesDB.count < 5) {
+  console.log("Kam Serial ko'ribsiz");
+} else if (seriesDB.count >= 5 && seriesDB.count < 10) {
+  console.log("Siz klassik tomashabin ekansiz");
+} else if (seriesDB.count >= 10) {
+  console.log("Siz serialchi zvezda ekansiz");
+} else {
+  // console.error("Error");
+}
+
+function showDb() {
+  if (seriesDB.privat === seriesDB.privat) {
+    console.log(seriesDB);
+  } else {
+    console.log("Aksincha");
+  }
+}
+
+showDb();
+
+function writeGenres(janr) {
+  for (let i = 0; i <= 2; i++) {
+    seriesDB.genres[i] = prompt(`Yaxshi ko'rgan janringiz ${i + 1}`);
+  }
+}
+
+writeGenres();
