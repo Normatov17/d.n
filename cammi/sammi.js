@@ -98,6 +98,14 @@ let numberOfSeries;
 
 function startApp() {
   numberOfSeries = +prompt("Nechta Serial Ko'rdingiz", "");
+
+  while (
+    numberOfSeries == "" ||
+    numberOfSeries == null ||
+    isNaN(numberOfSeries)
+  ) {
+    numberOfSeries = +prompt("Nechta Serial Ko'rdingiz", "");
+  }
 }
 
 startApp();

@@ -1,5 +1,24 @@
 {
   "devDependencies": {
-    "prettier": "3.0.0"
-  }
+    "prettier": "3.0.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "name": "a",
+  "description": "",
+  "version": "1.0.0",
+  "main": "about.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Normatov17/From-0-expertion.git"
+  },
+  "author": "\"Davlatbek\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Normatov17/From-0-expertion/issues"
+  },
+  "homepage": "https://github.com/Normatov17/From-0-expertion#readme"
 }
