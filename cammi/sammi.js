@@ -298,23 +298,48 @@
 
 // copy(user);
 
-function nusxaObj(obj) {
-  let ObjNusxa = {};
+// function nusxaObj(obj) {
+//   let ObjNusxa = {};
 
-  for (let key in obj) {
-    ObjNusxa[key] = obj[key];
-  }
+//   for (let key in obj) {
+//     ObjNusxa[key] = obj[key];
+//   }
 
-  return ObjNusxa;
-}
+//   return ObjNusxa;
+// }
 
-const number = {
-  x: 10,
-  y: 5,
-};
+// const number = {
+//   x: 10,
+//   y: 5,
+//   z: {
+//     a: 1,
+//     b: 2,
+//   },
+// };
+// const newNumber = nusxaObj(number);
+// newNumber.x = 20;
+// console.log(newNumber);
+// console.log(number);
 
-const newNumber = nusxaObj(number);
+// const nusax = Object.assign({}, number);
+// nusax.x = 99;
+// console.log(nusax);
 
-newNumber.x = 20;
-console.log(newNumber);
-console.log(number);
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// const numbers = arr.slice();
+// console.log(numbers);
+
+//
+// const Liverpool = ["Salah", "Mene"];
+// const ManCity = ["Mahrez", "Foden"];
+
+// const maxPlayer = [...Liverpool, ...ManCity];
+// console.log(maxPlayer);
+
+// spread = operator
+// const calc = [1, 3, 6];
+// function logger(x, y, z) {
+//   console.log(x * y * z);
+// }
+
+// logger(...calc);
