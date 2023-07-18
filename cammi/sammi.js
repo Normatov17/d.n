@@ -368,63 +368,176 @@
 
 // Amaliyot
 
-function startApp() {
-  numberOfSeries = +prompt("Nechta Serial Ko'rdingiz", "");
+// const seriesDB = {
+//   count: 0,
+//   series: {},
+//   actors: {},
+//   genres: [],
+//   private: false,
+//   start: () => {
+//     seriesDB.count = +prompt("Nechta serial ko'rdingiz?", "");
 
-  while (
-    numberOfSeries == "" ||
-    numberOfSeries == null ||
-    isNaN(numberOfSeries)
-  ) {
-    numberOfSeries = +prompt("Nechta Serial Ko'rdingiz", "");
-  }
-}
+//     while (
+//       seriesDB.count == "" ||
+//       seriesDB.count == null ||
+//       isNaN(seriesDB.count)
+//     ) {
+//       seriesDB.count = +prompt("Nechta serial ko'rdingiz?", "");
+//     }
+//   },
+//   rememberMySeries: function () {
+//     for (let i = 0; i < 2; i++) {
+//       const a = prompt("Oxirgi ko'rgan serialingiz?"),
+//         b = prompt("Nechi baxo berasiz?");
 
-startApp();
-const seriesDB = {
-  count: numberOfSeries,
-  series: {},
-  actors: [],
-  genres: [],
-  privat: false,
-};
+//       if (a != null && b != null && a != "" && b != "") {
+//         seriesDB.series[a] = b;
+//         console.log("done");
+//       } else {
+//         console.log("error");
+//         i--;
+//       }
+//     }
+//   },
+//   detectLevelSeries: function () {
+//     if (seriesDB.count < 5) {
+//       console.log("Kam serial ko’ripsiz");
+//     } else if (seriesDB.count >= 5 && seriesDB.count < 10) {
+//       console.log("Siz classik tamoshabin ekansiz");
+//     } else if (seriesDB.count >= 10) {
+//       console.log("Siz serialchi zvezda ekansiz");
+//     } else {
+//       console.log("Error");
+//     }
+//   },
+//   showDb: function () {
+//     if (!seriesDB.private) {
+//       console.log(seriesDB);
+//     }
+//   },
+//   visibleDB: function () {
+//     if (seriesDB.private) {
+//       seriesDB.private = false;
+//     } else {
+//       seriesDB.private = true;
+//     }
+//   },
+//   writeGenres: function () {
+//     for (let i = 0; i < 3; i++) {
+//       const genre = prompt(`Yaxshi ko'rgan janringiz ${i + 1}`, "");
+//       if (genre === "" || genre === null) {
+//         console.log("Siz notog'ri ma'lumot kiritdingiz");
+//         i--;
+//       } else {
+//         seriesDB.genres[i] = genre;
+//       }
+//     }
 
-for (let i = 0; i < 2; i++) {
-  const a = prompt("Oxirgi ko'rgan serialingiz?");
-  const b = prompt("Necha baxo berasiz?");
-  if (a != null && b != null && a != "" && b != "") {
-    seriesDB.series[a] = b;
-    console.log("done");
-  } else {
-    console.log("error");
-    i--;
-  }
-}
+//     let genres = prompt(
+//       "Yaxshi ko'rgan janringizni vergul yordamida yozing"
+//     ).toLowerCase();
 
-if (seriesDB.count < 5) {
-  console.log("Kam Serial ko'ribsiz");
-} else if (seriesDB.count >= 5 && seriesDB.count < 10) {
-  console.log("Siz klassik tomashabin ekansiz");
-} else if (seriesDB.count >= 10) {
-  console.log("Siz serialchi zvezda ekansiz");
-} else {
-  // console.error("Error");
-}
+//     if (genres === "" || genres === null) {
+//       console.log("Siz notog'ri ma'lumot kiritdingiz");
+//       i--;
+//     } else {
+//       seriesDB.genres = genres.split(", ");
+//       seriesDB.genres.sort();
+//     }
 
-function showDb() {
-  if (seriesDB.privat === seriesDB.privat) {
-    console.log(seriesDB);
-  } else {
-    console.log("Aksincha");
-  }
-}
+//     seriesDB.genres.forEach((item, idx) => {
+//       console.log(`Yaxshi ko’rgan janringiz ${idx + 1} - nomi ${item}`);
+//     });
+//   },
+// };
 
-showDb();
+// seriesDB.start();
+// seriesDB.rememberMySeries();
 
-function writeGenres(janr) {
-  for (let i = 0; i <= 2; i++) {
-    seriesDB.genres[i] = prompt(`Yaxshi ko'rgan janringiz ${i + 1}`);
-  }
-}
+// Dnyamic typing
 
-writeGenres();
+// const circleWrapper = document.querySelector(".circle__wrapper");
+// const box = document.querySelector(".box");
+// const buttons = document.querySelectorAll("button");
+// const hearts = document.querySelectorAll(".heart");
+// const circle = document.querySelectorAll(".circle");
+// box.style.background = "red";
+// box.style.borderRadius = "100px";
+// buttons.forEach((button) => {
+//   button.style.background = "black";
+// });
+// buttons[2].style.background = "green";
+
+// box.style.cssText = "color: red; width: 440px; background: green";
+
+// const btn = document.createElement("button");
+
+// document.body.append(btn);
+
+// const myCircule = document.createElement("div");
+// myCircule.classList.add("circle");
+// // circleWrapper.append(myCircule);
+// // circleWrapper.after(myCircule);
+// // circle[1].replaceWith(myCircule);
+// circleWrapper.append(myCircule);
+// myCircule.textContent = "E";
+// circleWrapper.insertAdjacentHTML("afterbegin", "<pre>e</pre>");
+
+// function boX(call) {
+//   box.addEventListener("mouseover", () => {
+//     box.style.background = "red";
+//   });
+//   return call;
+// }
+
+// setTimeout(function () {
+//   hearts.forEach((hears) => {
+//     hears.style.cssText = "borderRadius: 0px; ";
+//     hears.addEventListener("mouseover", function () {
+//       hears.classList.toggle("open");
+//     });
+//   });
+// }, 3000);
+
+// boX(yurak);
+
+// TODO Alamiyot
+
+// xodisalar
+const btn = document.querySelector("#gfd");
+const overley = document.querySelector(".overley");
+
+// btn.addEventListener("click", (e) => {
+//   e.target.remove();
+// alert("mouseover");
+// });
+
+// btn.addEventListener("click", () => {
+//   alert("click");
+// });
+
+// let i = 0;
+
+// const deleteElement = (e) => {
+//   i++;
+
+//   if (i === 3) {
+//     btn.removeEventListener("click", deleteElement);
+//   }
+//   // e.target.remove();
+//   console.log(i);
+// };
+// btn.addEventListener("click", deleteElement);
+// overley.addEventListener("click", deleteElement);
+// const link = document.querySelector("a");
+
+// link.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   alert("link");
+// });
+
+// TODO Navigatsuya DOM bo'yicha
+// console.log(document.head);
+// console.log(document.body);
+//console.log(document.body.childNodes);
+console.log();
