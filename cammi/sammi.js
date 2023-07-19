@@ -504,8 +504,8 @@
 // TODO Alamiyot
 
 // xodisalar
-const btn = document.querySelector("#gfd");
-const overley = document.querySelector(".overley");
+// const btn = document.querySelector("#gfd");
+// const overley = document.querySelector(".overley");
 
 // btn.addEventListener("click", (e) => {
 //   e.target.remove();
@@ -540,4 +540,29 @@ const overley = document.querySelector(".overley");
 // console.log(document.head);
 // console.log(document.body);
 //console.log(document.body.childNodes);
-console.log();
+
+// function sayHello() {
+//   console.log("Good Morning");
+// }
+
+// const arr = [23, 4, 1, 67, -3, 4, 4, 1];
+
+// sayHello();
+// sorted = arr.sort();
+// function sorted(a, b) {
+//   // debugger;
+//   return a - b;
+// }
+
+// console.log(sorted);
+
+// sayHello();
+
+const btns = document.querySelectorAll("button");
+
+// console.log(btn[0].classList.length);
+// btn[3].classList.add("blue");
+
+if (btns[0].classList.contains("blue")) {
+  console.log("Bor");
+}
