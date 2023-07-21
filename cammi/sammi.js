@@ -558,11 +558,105 @@
 
 // sayHello();
 
-const btns = document.querySelectorAll("button");
+// const btns = document.querySelectorAll("button");
 
-// console.log(btn[0].classList.length);
-// btn[3].classList.add("blue");
+// // console.log(btn[0].classList.length);
+// // btn[3].classList.add("blue");
 
-if (btns[0].classList.contains("blue")) {
-  console.log("Bor");
+// btns[2].style.cssText = "background: red;";
+
+// if (btns[0].classList.contains("blue")) {
+//   btns[0].classList.remove("blue");
+// }
+
+// btns[0].addEventListener("click", (e) => {
+//   btns[1].classList.add("blue");
+// });
+
+// // DElagatsiya
+
+// const wrapper = document.querySelector(".btn-block");
+// wrapper.addEventListener("click", (e) => {
+//   if (e.target && e.target.tagName == "BUTTON") {
+//     // btns.forEach((item) => {
+//     //   item.classList.toggle("blue");
+//     // });
+//     console.log("click");
+//   }
+// });
+
+// const btn = document.createElement("button");
+// btn.classList.add("blue");
+// wrapper.append(btn);
+
+// setTimeOut setinterval animation
+// const btn = document.querySelector("#btn");
+
+// // clearInterval(timerId);
+// let timerId;
+// let i = 0;
+
+function myAnimation() {
+  const car = document.querySelector(".car");
+  let pos = 0;
+
+  const timerInt = setInterval(frem, 4);
+  function frem() {
+    if (pos === 700) {
+      clearInterval(timerInt);
+    } else {
+      pos++;
+      car.style.left = pos + "px";
+    }
+  }
 }
+
+btn.addEventListener("click", (e) => {
+  myAnimation();
+});
+
+// const car = {
+//   airbag: true,
+// };
+
+// const gm = {
+//   color: "red",
+// };
+
+// gm.__proto__ = car;
+// console.log(gm);
+
+// Data bn ishlash soat kun vaqt yil
+// const now = new Date();
+// const soat = now.getHours();
+// console.log(now.setHours(18));
+// console.log(now);
+
+// Window document
+
+//
+function Car(name, color, speed) {
+  this.name = name;
+  this.color = color;
+  this.speed = speed;
+  this.airbag = true;
+  this.sp = function () {
+    console.log(`Speed of car ${this.name} is ${this.speed}ks/s`);
+  };
+}
+
+Car.prototype.sayHello = function (name) {
+  console.log(`Car name of ${this.name} sayHello`);
+};
+
+const bmw = new Car("BMW", "Black", 280);
+const mers = new Car("Mers", "red", 280);
+const gm = new Car("GM", "White", 180);
+
+console.log(mers);
+mers.sp();
+
+mers.sayHello();
+
+console.log(this.window);
+console.log(new Date());
