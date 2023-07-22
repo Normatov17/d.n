@@ -634,29 +634,60 @@ btn.addEventListener("click", (e) => {
 
 // Window document
 
-//
-function Car(name, color, speed) {
-  this.name = name;
-  this.color = color;
-  this.speed = speed;
-  this.airbag = true;
-  this.sp = function () {
-    console.log(`Speed of car ${this.name} is ${this.speed}ks/s`);
-  };
+// //
+// function Car(name, color, speed) {
+//   this.name = name;
+//   this.color = color;
+//   this.speed = speed;
+//   this.airbag = true;
+//   this.sp = function () {
+//     console.log(`Speed of car ${this.name} is ${this.speed}ks/s`);
+//   };
+// }
+
+// Car.prototype.sayHello = function (name) {
+//   console.log(`Car name of ${this.name} sayHello`);
+// };
+
+// const bmw = new Car("BMW", "Black", 280);
+// const mers = new Car("Mers", "red", 280);
+// const gm = new Car("GM", "White", 180);
+
+// console.log(mers);
+// mers.sp();
+
+// mers.sayHello();
+
+// console.log(this.window);
+// console.log(new Date());
+
+class Car {
+  constructor(name, color, speed) {
+    this.name = name;
+    this.color = color;
+    this.speed = speed;
+  }
+
+  calcSpeed() {
+    return this.speed * 100;
+  }
 }
 
-Car.prototype.sayHello = function (name) {
-  console.log(`Car name of ${this.name} sayHello`);
-};
+class Gm extends Car {
+  constructor(name, color, speed, isAirBag, Balon, benzin) {
+    super(name, color, speed);
+    this.isAirBag = isAirBag;
+    this.Balon = Balon;
+    this.benzin = benzin;
+  }
 
-const bmw = new Car("BMW", "Black", 280);
-const mers = new Car("Mers", "red", 280);
-const gm = new Car("GM", "White", 180);
+  logger() {
+    console.log(
+      `Mashina nomi ${this.name}, rangi ${this.color} mashina ${this.speed} tezlikka chiqadi va airbag ${this.isAirBag}, balon zapaska ${this.Balon}ta yana  plus ${this.benzin} letr benzin  bor`
+    );
+  }
+}
 
-console.log(mers);
-mers.sp();
+const Jentra = new Gm("Jentra", "qora", 180, "yo'q", 1, 5);
 
-mers.sayHello();
-
-console.log(this.window);
-console.log(new Date());
+Jentra.logger();
