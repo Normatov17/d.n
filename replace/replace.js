@@ -138,4 +138,153 @@ console.log(cars.indexOf("mers"));
 && va qayeridadir false bo'lsa oxirgi javob false ga o'zgaradi
 || yoki qayeridaddir true bo'lsa oxirgi javob true ga o'zgaradi
 ! = flase ni true qiladi treuni false qiladi yani teskarisiga
+
+*/
+
+// TODO Github bilan ishlash
+//  git init = git compuyterga o'rnatish
+//  git add . = hamma file hammasini add qilish
+//  git commit -m "" = git commit qilish comentariya yozish
+//  git  push = push qilish
+//  git  clone =  link orqali yuklab olish
+//  git pull clondan olingan reponi qo'shib qo'yish
+
+// TODO Amaliyot, Uyga vazifa
+
+// const numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+
+// const seresDB = {
+//   count: numberOfSeries,
+//   series: {},
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
+
+// const a = prompt("Oxirgi Ko'rgan serialingiz");
+// const b = prompt("Necha baxo qo'yasiz");
+// const c = prompt("Oxirgi Ko'rgan serialingiz");
+// const d = prompt("Necha baxo qo'yasiz");
+
+// seresDB.series[a] = b;
+// seresDB.series[c] = d;
+// console.log(seresDB);
+
+// TODO Shartli operatorlar  || if else, switch,
+
+// if (reques > 50) {
+//   console.log("Ota film");
+// } else if (reques < 30) {
+//   console.log("Boevik");
+// }
+
+/* Bizda terny operator bor bu faqat
+const reques = +prompt("Yoshingiz nechida");
+reques > 3 ? console.log("hello") : console.log("bybye");
+shu xolatda ishlaydi bu yerda ko'rishingiz mumkin
+? if bajaradi
+: else ni bajaradi 
+terny operator faqat if else nin qiladi agar bizda if else yana else if bolsa qila olmaydi
+ */
+
+//switch case
+
+// const day = "mondey";
+// switch (day) {
+//   case "mondey":
+//     console.log("Bugun dushanba");
+//     break;
+//   case "sunday":
+//     console.log("Bugun shanba");
+//     break;
+//   default:
+//     console.log("Bugun bozor");
+// }
+/* switch case faqat bitta narsani tenglashtradi agar biz harxil narsani xarxil narsaga tenglasak if else maqulroq yaxhiroq boladi. */
+
+// TODO Tsilk  for, while do while
+/* Bitta code ni 3 4 marotaba ishlatib beradi yani biz buuyruq bersak shuncha ishalasin deb shuncha vaqt ishlaydi. */
+// let num = 0;
+// let i = 0;
+// while (i <= 100) {
+//   console.log(num++);
+//   i++;
+// }
+
+// let hello = "Hello";
+// let i = 0;
+// while (i <= 100) {
+//   console.log(hello);
+//   i++;
+// }
+
+/* Tsikllar 3 xil boladi*/
+
+// TODO Amaliyot, Uyga vazifa Tsikl
+// const numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+
+// const seresDB = {
+//   count: numberOfSeries,
+//   series: {},
+//   actors: {},
+//   genres: [],
+//   privat: false,
+// };
+
+// for (let i = 0; i < 2; i++) {
+//   const a = prompt("Oxirgi Ko'rgan serialingiz");
+//   const b = prompt("Necha baxo qo'yasiz");
+
+//   if (a != null && b != null && a != "" && b != "") {
+//     seresDB.series[a] = b;
+//   } else {
+//     i--;
+//   }
+// }
+
+// if (seresDB.count < 5) {
+//   console.log("Siz juda kam kino ko'rarekansiz");
+// } else if (seresDB.count > 5 && seresDB.count < 10) {
+//   console.log("Siz classic tomashabin ekansiz");
+// } else if (seresDB.count > 10) {
+//   console.log("Siz zvezda tomashanin ekansiz");
+// }
+
+// console.log(seresDB);
+
+// TODO Function ES6
+/*
+Functionni 3 xil usulda e'lon qilish mumkin 
+Function decloration
+Function expression
+Arrow Function
+
+
+function calculator(a, b) {
+  console.log(a + b);
+}
+
+calculator(2, 3);
+calculator(7, 9);
+calculator(2, 10);
+
+function name(name, lastName, job = "programmist") {
+  console.log(`Mening ismim ${name} familyam ${lastName} men ${job}man`);
+}
+
+name("Davlatbek", "Normatov");
+
+const cacl = function () {
+  console.log("Hello function expression");
+};
+
+cacl();
+
+const arrow = () => {
+  console.log("Hello arrow function");
+};
+
+arrow(); 
+return degani bu bizga function to'xtatib functionni boshqa function ichida ishlatishga yordam beradi bu return qilgandan so'ng biz bu qauygan function ni bironta o'zgaruvchiga tenglab olishimiz kerak.
+
 */
