@@ -142,41 +142,41 @@ console.log(cars.indexOf("mers"));
 */
 
 // TODO Github bilan ishlash
-//  git init = git compuyterga o'rnatish
-//  git add . = hamma file hammasini add qilish
-//  git commit -m "" = git commit qilish comentariya yozish
-//  git  push = push qilish
-//  git  clone =  link orqali yuklab olish
-//  git pull clondan olingan reponi qo'shib qo'yish
+/*  git init = git compuyterga o'rnatish
+  git add . = hamma file hammasini add qilish
+  git commit -m "" = git commit qilish comentariya yozish
+  git  push = push qilish
+  git  clone =  link orqali yuklab olish
+  git pull clondan olingan reponi qo'shib qo'yish */
 
 // TODO Amaliyot, Uyga vazifa
 
-// const numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+/* const numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
 
-// const seresDB = {
-//   count: numberOfSeries,
-//   series: {},
-//   actors: {},
-//   genres: [],
-//   privat: false,
-// };
+ const seresDB = {
+   count: numberOfSeries,
+   series: {},
+   actors: {},
+   genres: [],
+   privat: false,
+ };
 
-// const a = prompt("Oxirgi Ko'rgan serialingiz");
-// const b = prompt("Necha baxo qo'yasiz");
-// const c = prompt("Oxirgi Ko'rgan serialingiz");
-// const d = prompt("Necha baxo qo'yasiz");
+ const a = prompt("Oxirgi Ko'rgan serialingiz");
+ const b = prompt("Necha baxo qo'yasiz");
+ const c = prompt("Oxirgi Ko'rgan serialingiz");
+ const d = prompt("Necha baxo qo'yasiz");
 
-// seresDB.series[a] = b;
-// seresDB.series[c] = d;
-// console.log(seresDB);
+ seresDB.series[a] = b;
+ seresDB.series[c] = d;
+ console.log(seresDB); */
 
 // TODO Shartli operatorlar  || if else, switch,
 
-// if (reques > 50) {
-//   console.log("Ota film");
-// } else if (reques < 30) {
-//   console.log("Boevik");
-// }
+/* if (reques > 50) {
+   console.log("Ota film");
+ } else if (reques < 30) {
+   console.log("Boevik");
+ } */
 
 /* Bizda terny operator bor bu faqat
 const reques = +prompt("Yoshingiz nechida");
@@ -187,36 +187,36 @@ shu xolatda ishlaydi bu yerda ko'rishingiz mumkin
 terny operator faqat if else nin qiladi agar bizda if else yana else if bolsa qila olmaydi
  */
 
-//switch case
+/* switch case
 
-// const day = "mondey";
-// switch (day) {
-//   case "mondey":
-//     console.log("Bugun dushanba");
-//     break;
-//   case "sunday":
-//     console.log("Bugun shanba");
-//     break;
-//   default:
-//     console.log("Bugun bozor");
-// }
+ const day = "mondey";
+ switch (day) {
+   case "mondey":
+     console.log("Bugun dushanba");
+     break;
+   case "sunday":
+     console.log("Bugun shanba");
+     break;
+   default:
+     console.log("Bugun bozor");
+ } */
 /* switch case faqat bitta narsani tenglashtradi agar biz harxil narsani xarxil narsaga tenglasak if else maqulroq yaxhiroq boladi. */
 
 // TODO Tsilk  for, while do while
 /* Bitta code ni 3 4 marotaba ishlatib beradi yani biz buuyruq bersak shuncha ishalasin deb shuncha vaqt ishlaydi. */
-// let num = 0;
-// let i = 0;
-// while (i <= 100) {
-//   console.log(num++);
-//   i++;
-// }
+/* let num = 0;
+ let i = 0;
+ while (i <= 100) {
+   console.log(num++);
+   i++;
+ }
 
-// let hello = "Hello";
-// let i = 0;
-// while (i <= 100) {
-//   console.log(hello);
-//   i++;
-// }
+ let hello = "Hello";
+ let i = 0;
+ while (i <= 100) {
+   console.log(hello);
+   i++;
+ } */
 
 /* Tsikllar 3 xil boladi*/
 
@@ -260,6 +260,7 @@ Function expression
 Arrow Function
 
 
+
 function calculator(a, b) {
   console.log(a + b);
 }
@@ -288,3 +289,195 @@ arrow();
 return degani bu bizga function to'xtatib functionni boshqa function ichida ishlatishga yordam beradi bu return qilgandan so'ng biz bu qauygan function ni bironta o'zgaruvchiga tenglab olishimiz kerak.
 
 */
+
+// TODO Amaliyot, Uyga vazifa
+
+/* let numberOfSeries;
+
+ function startApp() {
+   numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+
+   while (
+     numberOfSeries == "" ||
+     numberOfSeries == null ||
+     isNaN(numberOfSeries)
+   ) {
+     numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+   }
+ }
+ startApp();
+
+ const seresDB = {
+   count: numberOfSeries,
+   series: {},
+   actors: {},
+   genres: [],
+   privat: false,
+ };
+
+ function rememberMySeries() {
+   for (let i = 0; i < 2; i++) {
+     const a = prompt("Oxirgi Ko'rgan serialingiz");
+     const b = prompt("Necha baxo qo'yasiz");
+
+     if (a != null && b != null && a != "" && b != "") {
+       seresDB.series[a] = b;
+       console.log("Done");
+     } else {
+       console.error("erro #%d", code);
+       i--;
+     }
+   }
+ }
+
+ rememberMySeries();
+
+ function detectLevelSeries() {
+   if (seresDB.count < 5) {
+     console.log("Siz juda kam kino ko'rarekansiz");
+   } else if (seresDB.count > 5 || seresDB.count < 10) {
+     console.log("Siz classic tomashabin ekansiz");
+   } else if (seresDB.count > 10) {
+     console.log("Siz zvezda tomashanin ekansiz");
+   }
+ }
+
+ detectLevelSeries();
+
+ function showDb() {
+   if (!seresDB.privat) {
+     console.log(seresDB);
+   }
+ }
+
+ showDb();
+ function writeGanres() {
+   for (let i = 0; i <= 2; i++) {
+     const ganre = prompt(`Yaxshi ko'rgan janringiz ${i + 1}`);
+
+     seresDB.genres.push(ganre);
+   }
+ }
+
+ writeGanres();
+ */
+
+// TODO Callback Fuction
+/* callback function deb chaqirilayotgan functioni argumentiga function berib yuborishlikka aytiladi.
+
+const myFunction = (CallbackFunction) => {
+  let num = 50;
+  CallbackFunction(num);
+};
+
+myFunction(function (value) {
+  console.log(value + 49);
+}); 
+---------------------------------------------------
+
+function edu(subject, callback) {
+  setTimeout(() => {
+    console.log("Hello 1");
+    callback();
+  }, 2000);
+}
+
+edu("teacher", function () {
+  console.log("2");
+});
+--------------------------------------------------------------------------------------
+Xudi shu usulda ishladi
+
+function frist(fristName, job, call) {
+  setTimeout(() => {
+    console.log(`Salom mening ismim ${fristName} men ${job}`);
+    call();
+  }, 3000);
+}
+
+function second() {
+  console.log("Salom men cleintman");
+}
+
+frist("Davlatbek", "programerr", second);
+
+
+---------------------------------------------------------------------------------------------
+let salom = "Salom";
+function hel(call) {
+  setTimeout(() => {
+    for (let i = 0; i < 100; i++) {
+      console.log(salom + [i]);
+    }
+    call();
+  }, 3000);
+}
+
+function kut() {
+  console.log("100 Salom");
+}
+
+hel(kut);
+*/
+
+// TODO Object. Destruptizatsiya
+/* JavaScript Object - bir necht ma'lumot turlarini saqlashga imkon beradigon ma'lumot turli (data-type)  deyiladi. 
+
+const theif = {
+  jacket: "black",
+  heigth: 1.79,
+  colors: {
+    hair: "gray",
+    style: "curley",
+  },
+};
+
+console.log(theif);
+delete theif.colors.hair;
+console.log(theif);
+
+
+
+
+-- object methods
+Object.keys()  = objectni ichidagi kalit so'zlarni qaytaradi
+Object.valeu() = object ichidagi qiymatini qaytaradi
+Object.entries() = object ichidagi har bir qatorni arrayga solib beradi 
+delete  = o'chish uchun ishlatiladi bu tartibda => delete theif.colors
+
+
+for in degan method interatsiya = tsikl
+
+const theif = {
+  jacket: "black",
+  heigth: 1.79,
+  colors: {
+    hair: "gray",
+    style: "curley",
+  },
+};
+
+for (let key in theif) {
+  if (typeof theif[key] === "object") {
+    for (let i in theif[key]) {
+      console.log(`Property ${i} has value ${theif[key][i]}`);
+    }
+  } else {
+    console.log(`Property ${key} has value ${theif[key]}`);
+  }
+}
+
+*/
+
+/*
+Array massivlar
+Massiv bir nechta qiymatlarni o'z ichiga olishi mumkin bo'lgan maxsus o'zgaruvchidir:
+const cars = ["Saab", "Volvo", "BMW"];
+
+
+*/
+const funSec = function () {
+  console.log("Hello World");
+};
+
+funSec();
