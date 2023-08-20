@@ -290,89 +290,100 @@ return degani bu bizga function to'xtatib functionni boshqa function ichida ishl
 
 */
 
+// TODO Method and Property
+// const name = "Davlatbek";
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
+// console.log(name.length);
+// const user = "Hello World!";
+// const resoult = user.includes("e");
+// console.log(resoult);
+// console.log(user.indexOf("e"));
+// console.log(user.slice(6));
+// console.log(user.substring(6));
+
+// const num = 8.8;
+// console.log(Math.round(num));
+
+// const borderWithd = "14.9px";
+// console.log(parseInt(borderWithd));
+// console.log(parseFloat(borderWithd));
+
 // TODO Amaliyot, Uyga vazifa
 
 /* let numberOfSeries;
 
- function startApp() {
-   numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+function startApp() {
+  numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
 
-   while (
-     numberOfSeries == "" ||
-     numberOfSeries == null ||
-     isNaN(numberOfSeries)
-   ) {
-     numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
-   }
- }
- startApp();
+  while (
+    numberOfSeries == "" ||
+    numberOfSeries == null ||
+    isNaN(numberOfSeries)
+  ) {
+    numberOfSeries = +prompt("Nechta Kino Ko'rdingiz", "");
+  }
+}
+startApp();
 
- const seresDB = {
-   count: numberOfSeries,
-   series: {},
-   actors: {},
-   genres: [],
-   privat: false,
- };
+const seresDB = {
+  count: numberOfSeries,
+  series: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
 
- function rememberMySeries() {
-   for (let i = 0; i < 2; i++) {
-     const a = prompt("Oxirgi Ko'rgan serialingiz");
-     const b = prompt("Necha baxo qo'yasiz");
+function rememberMySeries() {
+  for (let i = 0; i < 2; i++) {
+    const a = prompt("Oxirgi Ko'rgan serialingiz");
+    const b = prompt("Necha baxo qo'yasiz");
 
-     if (a != null && b != null && a != "" && b != "") {
-       seresDB.series[a] = b;
-       console.log("Done");
-     } else {
-       console.error("erro #%d", code);
-       i--;
-     }
-   }
- }
+    if (a != null && b != null && a != "" && b != "") {
+      seresDB.series[a] = b;
+      // console.log("Done");
+    } else {
+      console.error("erro #%d", code);
+      i--;
+    }
+  }
+}
 
- rememberMySeries();
+rememberMySeries();
 
- function detectLevelSeries() {
-   if (seresDB.count < 5) {
-     console.log("Siz juda kam kino ko'rarekansiz");
-   } else if (seresDB.count > 5 || seresDB.count < 10) {
-     console.log("Siz classic tomashabin ekansiz");
-   } else if (seresDB.count > 10) {
-     console.log("Siz zvezda tomashanin ekansiz");
-   }
- }
+function detectLevelSeries() {
+  if (seresDB.count < 5) {
+    console.log("Siz juda kam kino ko'rarekansiz");
+  } else if (seresDB.count > 5 || seresDB.count < 10) {
+    console.log("Siz classic tomashabin ekansiz");
+  } else if (seresDB.count > 10) {
+    console.log("Siz zvezda tomashanin ekansiz");
+  }
+}
 
- detectLevelSeries();
+detectLevelSeries();
 
- function showDb() {
-   if (!seresDB.privat) {
-     console.log(seresDB);
-   }
- }
+function showDb() {
+  if (!seresDB.privat) {
+    console.log(seresDB);
+  }
+}
 
- showDb();
- function writeGanres() {
-   for (let i = 0; i <= 2; i++) {
-     const ganre = prompt(`Yaxshi ko'rgan janringiz ${i + 1}`);
+showDb();
+function writeGanres() {
+  for (let i = 0; i <= 2; i++) {
+    const ganre = prompt(`Yaxshi ko'rgan janringiz ${i + 1}`);
 
-     seresDB.genres.push(ganre);
-   }
- }
+    seresDB.genres.push(ganre);
+  }
+}
 
- writeGanres();
- */
+writeGanres(); */
 
 // TODO Callback Fuction
 /* callback function deb chaqirilayotgan functioni argumentiga function berib yuborishlikka aytiladi.
 
-const myFunction = (CallbackFunction) => {
-  let num = 50;
-  CallbackFunction(num);
-};
 
-myFunction(function (value) {
-  console.log(value + 49);
-}); 
 ---------------------------------------------------
 
 function edu(subject, callback) {
@@ -403,22 +414,84 @@ frist("Davlatbek", "programerr", second);
 
 
 ---------------------------------------------------------------------------------------------
-let salom = "Salom";
-function hel(call) {
-  setTimeout(() => {
-    for (let i = 0; i < 100; i++) {
-      console.log(salom + [i]);
-    }
-    call();
-  }, 3000);
-}
 
-function kut() {
-  console.log("100 Salom");
-}
-
-hel(kut);
 */
+
+// const myFunction = (CallbackFunction) => {
+//   let num = 50;
+//   CallbackFunction(num);
+// };
+
+// myFunction(function (value) {
+//   console.log(value + 49);
+// });
+
+// let salom = "Salom";
+// function hel(call) {
+//   setTimeout(() => {
+//     for (let i = 0; i < 100; i++) {
+//       console.log(salom + [i]);
+//     }
+//     call();
+//   }, 3000);
+// }
+
+// function kut() {
+//   console.log("100 Salom");
+// }
+
+// hel(kut);
+// function frist() {
+//   setTimeout(() => {
+//     console.log("1");
+//     second();
+//   }, 3000);
+// }
+
+// function second() {
+//   console.log(2);
+// }
+
+// frist(second);
+
+// function edu(subject, callback) {
+//   setTimeout(() => {
+//     console.log(`I can you ${subject}`);
+//     callback();
+//   }, 5000);
+// }
+
+// const kut = function () {
+//   console.log("Hello World !");
+// };
+
+// edu("kitob", kut);
+
+// function myFirst() {
+//   setTimeout(() => {
+//     console.log("Hello ");
+//     mySecond();
+//   }, 2000);
+// }
+
+// function mySecond() {
+//   console.log("GoodBye");
+// }
+
+// myFirst(mySecond);
+
+// const frist = function () {
+//   setTimeout(() => {
+//     console.log("Hello World!");
+//     secound();
+//   }, 3000);
+// };
+
+// const secound = function () {
+//   console.log("Goodybye Worlds !");
+// };
+
+// frist(secound);
 
 // TODO Object. Destruptizatsiya
 /* JavaScript Object - bir necht ma'lumot turlarini saqlashga imkon beradigon ma'lumot turli (data-type)  deyiladi. 
@@ -469,6 +542,40 @@ for (let key in theif) {
 
 */
 
+const user = {
+  fristName: "Davlatbek",
+  lastName: "Normatov",
+  age: 19,
+  long: 1.7,
+  kg: 65,
+  location: ["Uzbekistan", "Andijan"],
+  colors: {
+    hair: "gray",
+    style: "curley",
+  },
+  langues: ["Rus", "Ingliz", "Uzbek"],
+  // speek() {
+  //   this.langues.forEach((lang) => {
+  //     console.log(`Men ${lang} tilida gaplasha olaman`);
+  //   });
+  // },
+};
+
+const { hair, style } = user.colors;
+
+console.log(hair);
+console.log(style);
+
+for (let key in user) {
+  if (typeof user[key] === "object") {
+    for (let i in user[key]) {
+      console.log(`Property ${i} has value ${user[key][i]}`);
+    }
+  }
+}
+
+console.log(Object.keys(user).length);
+
 /*
 Array massivlar
 Massiv bir nechta qiymatlarni o'z ichiga olishi mumkin bo'lgan maxsus o'zgaruvchidir:
@@ -476,8 +583,3 @@ const cars = ["Saab", "Volvo", "BMW"];
 
 
 */
-const funSec = function () {
-  console.log("Hello World");
-};
-
-funSec();
