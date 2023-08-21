@@ -665,3 +665,16 @@ const cars = ["Saab", "Volvo", "BMW"];
 // console.log(ChempionLeages);
 
 // TODO OOP asoslari
+const name = "Davlatbek";
+const name2 = new String("Davlatbek");
+console.log(name);
+console.log(name2);
+
+console.log(typeof name);
+console.log(typeof name2);
+
+const car = {
+  mator: "X",
+  isAirBag: true,
+  balon: 5,
+};
