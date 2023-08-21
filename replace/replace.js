@@ -542,44 +542,126 @@ for (let key in theif) {
 
 */
 
-const user = {
-  fristName: "Davlatbek",
-  lastName: "Normatov",
-  age: 19,
-  long: 1.7,
-  kg: 65,
-  location: ["Uzbekistan", "Andijan"],
-  colors: {
-    hair: "gray",
-    style: "curley",
-  },
-  langues: ["Rus", "Ingliz", "Uzbek"],
-  // speek() {
-  //   this.langues.forEach((lang) => {
-  //     console.log(`Men ${lang} tilida gaplasha olaman`);
-  //   });
-  // },
-};
+// const user = {
+//   fristName: "Davlatbek",
+//   lastName: "Normatov",
+//   age: 19,
+//   long: 1.7,
+//   kg: 65,
+//   location: ["Uzbekistan", "Andijan"],
+//   colors: {
+//     hair: "gray",
+//     style: "curley",
+//   },
+//   langues: ["Rus", "Ingliz", "Uzbek"],
+//   // speek() {
+//   //   this.langues.forEach((lang) => {
+//   //     console.log(`Men ${lang} tilida gaplasha olaman`);
+//   //   });
+//   // },
+// };
 
-const { hair, style } = user.colors;
+// const { hair, style } = user.colors;
 
-console.log(hair);
-console.log(style);
+// console.log(hair);
+// console.log(style);
 
-for (let key in user) {
-  if (typeof user[key] === "object") {
-    for (let i in user[key]) {
-      console.log(`Property ${i} has value ${user[key][i]}`);
-    }
-  }
-}
+// for (let key in user) {
+//   if (typeof user[key] === "object") {
+//     for (let i in user[key]) {
+//       console.log(`Property ${i} has value ${user[key][i]}`);
+//     }
+//   }
+// }
 
-console.log(Object.keys(user).length);
+// console.log(Object.keys(user).length);
 
 /*
+TODO Array
 Array massivlar
 Massiv bir nechta qiymatlarni o'z ichiga olishi mumkin bo'lgan maxsus o'zgaruvchidir:
 const cars = ["Saab", "Volvo", "BMW"];
 
-
 */
+// const array = ["Mers", "Bmw", "Camry", "Gelik", "chevrolet"];
+// console.log(array);
+// array.unshift("das");
+// console.log(array);
+// for (let key of array) {
+//   console.log(array);
+// }
+
+// for (let i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+// array.forEach((mosh) => {
+//   console.log(mosh);
+// });
+
+// const reques = prompt("Narsa yozing", "");
+// const resoult = reques.split(", ");
+// console.log(resoult);
+
+// const reques = prompt("Narsa yozing", "");
+// const resoult = reques.split(", ");
+// console.log(resoult.join(" "));
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(array.join(" "));
+
+// const num = [11, 32, 112, 43, 55, 1, 3, 4, 67, 12];
+// console.log(num.sort((a, b) => a - b));
+
+// TODO Clonlash ES6
+// let x = 10;
+// let y = x;
+// y = 6;
+// console.log(x);
+// console.log(y);
+
+// const user = {
+//   name: "Davlatbek",
+//   lastName: "Normatov",
+//   age: 19,
+//   z: {
+//     x: 2,
+//     c: 12,
+//   },
+// };
+
+// const user2 = { ...user };
+// user2.age = 20;
+// console.log(user);
+// console.log(user2);
+
+// const car = ["mers", "bmw", "toyoto"];
+// const carCopy = [...car];
+// console.log(car);
+// console.log(carCopy);
+
+// for (let key in user) {
+//   if (typeof user === "object") {
+//     console.log(user[key]);
+//   }
+// }
+
+// const objetc1 = {
+//   x: 1,
+//   z: 2,
+// };
+
+// const objetc2 = {
+//   y: 3,
+// };
+
+// const allObject = Object.assign(objetc1, objetc2);
+// console.log(allObject);
+
+// const LiverPoll = ["Salah", "Mane"];
+// const ManCity = ["DeBrony", "Foden"];
+
+// const ChempionLeages = [...LiverPoll, ...ManCity];
+// console.log(ChempionLeages);
+
+// TODO OOP asoslari
