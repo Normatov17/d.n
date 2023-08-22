@@ -665,16 +665,44 @@ const cars = ["Saab", "Volvo", "BMW"];
 // console.log(ChempionLeages);
 
 // TODO OOP asoslari
-const name = "Davlatbek";
-const name2 = new String("Davlatbek");
-console.log(name);
-console.log(name2);
+// const name = "Davlatbek";
+// const name2 = new String("Davlatbek");
+// console.log(name);
+// console.log(name2);
 
-console.log(typeof name);
-console.log(typeof name2);
+// console.log(typeof name);
+// console.log(typeof name2);
 
-const car = {
-  mator: "X",
-  isAirBag: true,
-  balon: 5,
-};
+// const car = {
+//   mator: "X",
+//   isAirBag: true,
+//   balon: 5,
+//   color: "red",
+// };
+
+// const gm = {
+//   isAirBag: false,
+// };
+
+// Object.setPrototypeOf(gm, car);
+// console.log(gm.color);
+
+// const bmw = Object.create(car);
+
+// console.log(bmw);
+// gm.__proto__ = car;
+// console.log(gm.color);
+
+// TODO Dnyamic type || data typeni boshqa turdan boshqa turga o'zgartirish
+const number = "2.2px";
+console.log(typeof number);
+console.log(typeof Number(number));
+
+// const reques = prompt("Sizga qaysi YouTuber Kerak");
+// console.log(`https://youtube.com/${reques}/video`);
+
+console.log(parseInt(number));
+console.log(parseFloat(number));
+//Usul parseIntqiymatni satr sifatida tahlil qiladi va birinchi butun sonni qaytaradi.
+
+console.log(typeof !!"3");
