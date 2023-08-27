@@ -10,3 +10,27 @@
 // });
 
 //  Delegatsiya
+
+// wrapper.addEventListener("click", (e) => {
+//   if (e.target && e.target.classList.contains("blue")) {
+//     console.log("click");
+//   }
+// });
+
+// const btns = document.querySelectorAll("button");
+// btns.forEach((button) => {
+//   button.addEventListener("click", (e) => {
+//     console.log("clicked");
+//   });
+// });
+
+const wrapper = document.querySelector(".btn-block");
+const btn = document.createElement("button");
+btn.classList.add("red");
+wrapper.append(btn);
+
+wrapper.addEventListener("click", (e) => {
+  if (e.target && e.target.tagName === "BUTTON") {
+    console.log("Click our Button");
+  }
+});
